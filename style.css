@@ -1,0 +1,136 @@
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fce4ec, #e0f7fa);
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #7e57c2;
+  padding: 15px 30px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #c5cae9;
+}
+
+/* Home Page Styling */
+.home-container {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.home-container h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.start-btn {
+  background: #7e57c2;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.start-btn:hover {
+  background: #5e35b1;
+}
+
+/* Control Page */
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.mood-options {
+  margin-top: 20px;
+}
+
+.mood-btn {
+  margin: 10px;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 10px;
+  background: #00bcd4;
+  color: white;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.mood-btn:hover {
+  background: #008ba3;
+  transform: scale(1.05);
+}
+
+.feedback {
+  margin-top: 25px;
+  font-size: 1.3rem;
+  color: #6a1b9a;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .home-container h1 {
+    font-size: 2.2rem;
+  }
+
+  .mood-btn {
+    width: 90%;
+  }
+}

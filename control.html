@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>BreezeBloom – Control Panel</title>
+  <link rel="stylesheet" href="style.css" />
+  <button onclick="connectToWristband()" class="mood-btn">🔗 Connect to Wristband</button>
+</head>
+<body class="control-page">
+  <header>
+    <nav>
+      <div class="logo">🌬️ BreezeBloom</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="control.html">Control Panel</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Control Your Mood Scent</h2>
+    <p>Select your current mood:</p>
+
+    <div class="mood-options">
+      <button class="mood-btn" data-mood="relaxed">😌 Relaxed</button>
+      <button class="mood-btn" data-mood="focused">🧠 Focused</button>
+      <button class="mood-btn" data-mood="energized">⚡ Energized</button>
+      <button class="mood-btn" data-mood="romantic">❤️ Romantic</button>
+    </div>
+
+    <div id="feedback" class="feedback"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
